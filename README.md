@@ -4,10 +4,6 @@ A template for rapid development of React components, which satisfies component 
 
 English | [简体中文](./README.zh-CN.md)
 
-## 💖 How to use?
-
-![](./assets/1.png)
-
 ## 💎 Catalog Introduction
 
 ```

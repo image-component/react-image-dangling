@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`temp render 1`] = `
-<Temp>
+<ImageDangling>
   <h2>
     <div>
       HI
     </div>
   </h2>
-</Temp>
+</ImageDangling>
 `;

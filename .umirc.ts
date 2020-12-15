@@ -1,8 +1,8 @@
 // More: https://d.umijs.org/config
 import { defineConfig } from 'dumi';
 
-const name = 'react-component-template';
-const shortName = 'temp';
+const name = 'react-image-dangling';
+const shortName = 'ImageDangling';
 
 export default defineConfig({
   title: shortName,

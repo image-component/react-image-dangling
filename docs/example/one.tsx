@@ -3,14 +3,18 @@
  */
 
 import React from 'react';
-import Temp from '../../src';
+import ImageDangling from '../../src';
 import './demo.less';
 import '../../assets/index.less';
 
 const App = () => {
+  const src1 =
+    'https://github.com/image-component/react-image-shadow/blob/main/image/white.jpg?raw=true';
+  // const src2 = 'https://github.com/image-component/react-image-shadow/blob/main/image/blue.jpg?raw=true';
+
   return (
     <div className="demo">
-      <Temp />
+      <ImageDangling src={src1} />
     </div>
   );
 };

@@ -1,3 +1,24 @@
-.red {
-  color: red;
+.react-image-dangling {
+  transition: all 0.1s ease;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  &-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.1s ease;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  img {
+    display: block;
+    transition: all 0.3s ease;
+  }
 }

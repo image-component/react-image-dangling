@@ -1,4 +1,4 @@
-import Temp, { TempProps } from './app';
+import ImageDangling, { ImageDanglingProps } from './image';
 
-export { TempProps };
-export default Temp;
+export { ImageDanglingProps };
+export default ImageDangling;
