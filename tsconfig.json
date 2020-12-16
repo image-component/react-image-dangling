@@ -11,7 +11,8 @@
     "strict": true,
     "paths": {
       "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"]
+      "@@/*": ["src/.umi/*"],
+      "react-image-dangling": ["src/index.ts"]
     },
     "allowSyntheticDefaultImports": true
   },
@@ -22,6 +23,8 @@
     "dist",
     "typings",
     "**/__test__",
-    "test"
+    "test",
+    "docs",
+    "tests"
   ]
 }

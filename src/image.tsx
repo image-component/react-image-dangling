@@ -9,6 +9,7 @@ export interface ImageDanglingProps {
   hoverScale?: number;
   hoverSlope?: number;
   radius?: number;
+  shadeColor?: string;
   src: string;
   style?: React.CSSProperties;
   width?: number;
@@ -22,6 +23,7 @@ const ImageDangling = (props: ImageDanglingProps) => {
     hoverScale = 1.6,
     hoverSlope = 60,
     radius = 8,
+    shadeColor = '#000',
     src,
     style,
     width = 300,
@@ -80,18 +82,17 @@ const ImageDangling = (props: ImageDanglingProps) => {
     const lightConstrain = Math.min(Math.max(relY, 0.3), 0.7);
     const lightOpacity = scale(lightConstrain, 0.3, 1, 1, 0) * 255;
     const lightShade = `rgba(${lightOpacity}, ${lightOpacity}, ${lightOpacity}, 1)`;
-    const lightShadeBlack = `rgba(0, 0, 0, 1)`;
     if (blendMode) {
-      const mixStyle = {
-        mixBlendMode: 'soft-light',
-        backgroundImage: `radial-gradient(circle at ${lightX}% ${lightY}%, ${lightShade} 20%, ${lightShadeBlack})`,
-      };
+      let mixBlendMode = 'soft-light';
+      const backgroundImage = `radial-gradient(circle at ${lightX}% ${lightY}%, ${lightShade} 20%, ${shadeColor})`;
       if (typeof blendMode === 'string') {
-        mixStyle.mixBlendMode = blendMode;
+        mixBlendMode = blendMode;
       }
       setCardStyle({
         ...cardBaseStyle,
-        mixStyle,
+        mixBlendMode,
+        backgroundImage,
+        opacity: 1,
       });
     }
   };
@@ -113,6 +114,7 @@ const ImageDangling = (props: ImageDanglingProps) => {
     });
     setCardStyle({
       ...cardBaseStyle,
+      opacity: 1,
     });
   };
 

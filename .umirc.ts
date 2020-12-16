@@ -4,10 +4,12 @@ import { defineConfig } from 'dumi';
 const name = 'react-image-dangling';
 const shortName = 'ImageDangling';
 
+const url = 'https://avatars1.githubusercontent.com/u/75532006?s=200&v=4';
+
 export default defineConfig({
   title: shortName,
-  favicon: 'https://avatars3.githubusercontent.com/u/75602446?s=200&v=4',
-  logo: 'https://avatars3.githubusercontent.com/u/75602446?s=200&v=4',
+  favicon: url,
+  logo: url,
   outputPath: 'docs-dist',
   exportStatic: {},
   base: `/${name}/`,
