@@ -8,9 +8,9 @@ import './demo.less';
 import '../../assets/index.less';
 
 const src1 =
-  'https://github.com/image-component/react-image-shadow/blob/main/image/white.jpg?raw=true';
+  'https://github.com/image-component/gallery/blob/main/girl/3.jpg?raw=true';
 const src2 =
-  'https://github.com/image-component/react-image-shadow/blob/main/image/blue.jpg?raw=true';
+  'https://github.com/image-component/gallery/blob/main/girl/4.jpg?raw=true';
 
 const App = () => {
   return (
