@@ -131,7 +131,7 @@ const ImageDangling = (props: ImageDanglingProps) => {
         className="react-image-dangling-card"
         style={cardStyle}
         ref={cardRef as any}
-      ></div>
+      />
       <img
         src={src}
         alt={alt}
