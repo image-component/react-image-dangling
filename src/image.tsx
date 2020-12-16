@@ -131,10 +131,11 @@ const ImageDangling = (props: ImageDanglingProps) => {
         className="react-image-dangling-card"
         style={cardStyle}
         ref={cardRef as any}
-      ></div>
+      />
       <img
         src={src}
         alt={alt}
+        className="react-image-dangling-img"
         width={width}
         style={{
           borderRadius: `${radius}px`,

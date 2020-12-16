@@ -1,21 +1,39 @@
 /* eslint-disable comma-dangle */
 import React from 'react';
 import { mount } from 'enzyme';
+import { act } from 'react-dom/test-utils';
 import ImageDangling from '../src';
 
-describe('temp', () => {
+describe('ImageDangling', () => {
+  const testSrc =
+    'https://github.com/image-component/react-image-shadow/blob/main/image/red.png?raw=true';
+
   it('render', () => {
-    const wrapper = mount(<ImageDangling />);
+    let wrapper;
+
+    act(() => {
+      wrapper = mount(<ImageDangling src={testSrc} />);
+    });
+
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('render text', () => {
-    const wrapper = mount(<ImageDangling msg="test22" />);
-    expect(wrapper.find('h2').children().props().children).toEqual('test22');
+  it('alt', () => {
+    const wrapper = mount(<ImageDangling alt="alt" src={testSrc} />);
+    const node = wrapper.find('.react-image-dangling-img');
+    expect(node.prop('alt')).toEqual('alt');
   });
 
-  it('render classname', () => {
-    const wrapper = mount(<ImageDangling className="test33" />);
-    expect(wrapper.find('.test33').length).toBeTruthy();
+  it('className', () => {
+    const wrapper = mount(
+      <ImageDangling className="test-class" src={testSrc} />,
+    );
+    expect(wrapper.find('.test-class').length).toBeTruthy();
+  });
+
+  it('radius', () => {
+    const wrapper = mount(<ImageDangling radius={20} src={testSrc} />);
+    const node = wrapper.find('.react-image-dangling-img');
+    expect(node.prop('style')?.borderRadius).toEqual('20px');
   });
 });

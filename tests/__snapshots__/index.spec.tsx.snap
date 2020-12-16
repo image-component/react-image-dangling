@@ -1,11 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`temp render 1`] = `
-<ImageDangling>
-  <h2>
-    <div>
-      HI
-    </div>
-  </h2>
+exports[`ImageDangling render 1`] = `
+<ImageDangling
+  src="https://github.com/image-component/react-image-shadow/blob/main/image/red.png?raw=true"
+>
+  <div
+    className="react-image-dangling"
+    onMouseLeave={[Function]}
+    onMouseMove={[Function]}
+    onMouseOver={[Function]}
+    style={Object {}}
+  >
+    <div
+      className="react-image-dangling-card"
+      style={Object {}}
+    />
+    <img
+      className="react-image-dangling-img"
+      src="https://github.com/image-component/react-image-shadow/blob/main/image/red.png?raw=true"
+      style={
+        Object {
+          "borderRadius": "8px",
+        }
+      }
+      width={300}
+    />
+  </div>
 </ImageDangling>
 `;
