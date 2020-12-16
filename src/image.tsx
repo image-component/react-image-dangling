@@ -135,6 +135,7 @@ const ImageDangling = (props: ImageDanglingProps) => {
       <img
         src={src}
         alt={alt}
+        className="react-image-dangling-img"
         width={width}
         style={{
           borderRadius: `${radius}px`,
