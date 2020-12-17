@@ -32,8 +32,7 @@ const ImageDangling = (props: ImageDanglingProps) => {
   const [imgStyle, setImgStyle] = React.useState({});
   const [cardStyle, setCardStyle] = React.useState({});
 
-  const imgRef = React.useRef<HTMLElement>();
-  const cardRef = React.useRef<HTMLElement>();
+  const imgRef = React.useRef({ offsetWidth: 1, offsetHeight: 1 });
 
   const imgBaseStyle = {
     width: `${width}px`,
@@ -63,9 +62,6 @@ const ImageDangling = (props: ImageDanglingProps) => {
   };
 
   const move = (e: any) => {
-    if (!imgRef.current || !cardRef.current) {
-      return;
-    }
     const { offsetWidth, offsetHeight } = imgRef.current;
     const { offsetX, offsetY } = e.nativeEvent;
     const relX = (offsetX + 1) / offsetWidth;
@@ -127,11 +123,7 @@ const ImageDangling = (props: ImageDanglingProps) => {
       onMouseLeave={leave}
       ref={imgRef as any}
     >
-      <div
-        className="react-image-dangling-card"
-        style={cardStyle}
-        ref={cardRef as any}
-      />
+      <div className="react-image-dangling-card" style={cardStyle} />
       <img
         src={src}
         alt={alt}
