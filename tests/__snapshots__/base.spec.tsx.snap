@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ImageDangling render 1`] = `
+exports[`Base render 1`] = `
 <ImageDangling
-  src="https://github.com/image-component/react-image-shadow/blob/main/image/red.png?raw=true"
+  src="https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true"
 >
   <div
     className="react-image-dangling"
@@ -17,7 +17,7 @@ exports[`ImageDangling render 1`] = `
     />
     <img
       className="react-image-dangling-img"
-      src="https://github.com/image-component/react-image-shadow/blob/main/image/red.png?raw=true"
+      src="https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true"
       style={
         Object {
           "borderRadius": "8px",

@@ -4,9 +4,9 @@ import { mount } from 'enzyme';
 import { act } from 'react-dom/test-utils';
 import ImageDangling from '../src';
 
-describe('ImageDangling', () => {
+describe('Base', () => {
   const testSrc =
-    'https://github.com/image-component/react-image-shadow/blob/main/image/red.png?raw=true';
+    'https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true';
 
   it('render', () => {
     let wrapper;
@@ -35,5 +35,24 @@ describe('ImageDangling', () => {
     const wrapper = mount(<ImageDangling radius={20} src={testSrc} />);
     const node = wrapper.find('.react-image-dangling-img');
     expect(node.prop('style')?.borderRadius).toEqual('20px');
+  });
+
+  it('style', () => {
+    const wrapper = mount(
+      <ImageDangling
+        style={{
+          color: 'red',
+        }}
+        src={testSrc}
+      />,
+    );
+    const node = wrapper.find('.react-image-dangling');
+    expect(node.prop('style')?.color).toEqual('red');
+  });
+
+  it('width', () => {
+    const wrapper = mount(<ImageDangling width={100} src={testSrc} />);
+    const node = wrapper.find('.react-image-dangling-img');
+    expect(node.prop('width')).toEqual(100);
   });
 });
