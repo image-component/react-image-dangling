@@ -63,4 +63,38 @@ describe('Hover', () => {
       get: originOffsetHeight,
     });
   });
+
+  it('blendMode', () => {
+    const wrapper = mount(<ImageDangling src={testSrc} blendMode />);
+
+    const node = wrapper.find('.react-image-dangling');
+
+    node.simulate('mouseMove', {
+      offsetX: 99,
+      offsetY: 99,
+    });
+
+    expect(
+      wrapper.find('.react-image-dangling-card').prop('style').mixBlendMode,
+    ).toEqual('soft-light');
+
+    expect(
+      wrapper.find('.react-image-dangling-card').prop('style').opacity,
+    ).toEqual(1);
+  });
+
+  it('blendMode customer', () => {
+    const wrapper = mount(<ImageDangling src={testSrc} blendMode="color" />);
+
+    const node = wrapper.find('.react-image-dangling');
+
+    node.simulate('mouseMove', {
+      offsetX: 99,
+      offsetY: 99,
+    });
+
+    expect(
+      wrapper.find('.react-image-dangling-card').prop('style').mixBlendMode,
+    ).toEqual('color');
+  });
 });
