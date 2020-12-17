@@ -2,7 +2,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import ImageDangling from '../src';
-import { act } from 'react-dom/test-utils';
 
 describe('Hover', () => {
   const testSrc =

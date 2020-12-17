@@ -63,9 +63,6 @@ const ImageDangling = (props: ImageDanglingProps) => {
   };
 
   const move = (e: any) => {
-    if (!imgRef.current || !cardRef.current) {
-      return;
-    }
     const { offsetWidth, offsetHeight } = imgRef.current;
     const { offsetX, offsetY } = e.nativeEvent;
     const relX = (offsetX + 1) / offsetWidth;
