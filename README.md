@@ -26,9 +26,12 @@ yarn add react-image-dangling
 import ImageDangling from 'react-image-dangling';
 import 'react-image-dangling/assets/index.css';
 
+const src =
+  'https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true';
+
 export default () => (
   <>
-    <ImageDangling src="https://github.com/image-component/react-image-shadow/blob/main/image/red.png?raw=true" />
+    <ImageDangling src={src} />
   </>
 );
 ```
