@@ -40,7 +40,8 @@
   "keywords": [
     "components",
     "react",
-    "image"
+    "image",
+    "ui"
   ],
   "files": [
     "assets/*.css",
