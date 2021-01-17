@@ -2,7 +2,7 @@
 
 A React image component. Dangling interaction effect.
 
-[![npm](https://img.shields.io/npm/v/react-image-dangling?style=flat-square&color=orange)](https://www.npmjs.com/package/react-image-dangling) [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/umijs/dumi) ![](https://github.com/image-component/react-image-dangling/workflows/ci/badge.svg) ![](https://img.shields.io/github/last-commit/image-component/react-image-dangling/main?color=%23722ed1&style=flat-square) [![codecov](https://codecov.io/gh/image-component/react-image-dangling/branch/main/graph/badge.svg?token=PYD7S8BHOB)](https://codecov.io/gh/image-component/react-image-dangling) ![](https://img.shields.io/npm/dt/react-image-dangling?color=%23eb2f96&style=flat-square) ![](https://img.shields.io/npm/l/react-image-dangling?style=flat-square&color=red)
+[![npm](https://img.shields.io/npm/v/react-image-dangling?style=flat-square&color=orange)](https://www.npmjs.com/package/react-image-dangling) [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/umijs/dumi) ![](https://github.com/image-component/react-image-dangling/workflows/CI/badge.svg) ![](https://img.shields.io/github/last-commit/image-component/react-image-dangling/main?color=%23722ed1&style=flat-square) [![codecov](https://codecov.io/gh/image-component/react-image-dangling/branch/main/graph/badge.svg?token=PYD7S8BHOB)](https://codecov.io/gh/image-component/react-image-dangling) ![](https://img.shields.io/npm/dt/react-image-dangling?color=%23eb2f96&style=flat-square) ![](https://img.shields.io/npm/l/react-image-dangling?style=flat-square&color=red)
 
 ## 📚 Example
 
